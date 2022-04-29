@@ -12,10 +12,9 @@ namespace Task2
             StreamWriter streamWriter = file.CreateText();
             streamWriter.Write("hello world!");
             streamWriter.Close();
-            
-            StreamReader streamReader = file.OpenText();
-            Console.WriteLine(streamReader.ReadToEnd());
-            streamReader.Close();
+
+            using (StreamReader streamReader = file.OpenText())
+                Console.WriteLine(streamReader.ReadToEnd());
         }
     }
 }

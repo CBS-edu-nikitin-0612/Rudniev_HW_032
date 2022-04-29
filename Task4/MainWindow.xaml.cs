@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.IO.IsolatedStorage;
 using System.Windows;
+using System.Windows.Media;
 
 namespace Task4
 {
